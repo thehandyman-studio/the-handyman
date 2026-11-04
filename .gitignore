@@ -5,3 +5,10 @@ dist
 
 # Ignore the output video from Git but not videos you import into src/.
 out
+
+# Python environment for the sound tools
+.venv
+__pycache__
+_cache
+# merge backups made by scripts/bridge_merge.py
+backup
