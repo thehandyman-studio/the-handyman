@@ -1,0 +1,22 @@
+{
+  "_comment": "Central narration settings for every short. Change values here, not in the scripts. Chosen 2026-11-05 after voice tests (Wyman, variant 1 + post option C).",
+  "elevenlabs": {
+    "voice_name": "Wyman - The Storyteller",
+    "voice_id": "KYpkPJwl1dpLc9QpMwnO",
+    "model_id": "eleven_multilingual_v2",
+    "output_format": "mp3_44100_128",
+    "voice_settings": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.75,
+      "use_speaker_boost": true
+    },
+    "credits_per_char_estimate": 0.45
+  },
+  "postprocess": {
+    "pitch_semitones": 1.0,
+    "tempo_factor": 1.04,
+    "engine": "rubberband R3 (fine), formant preservation",
+    "output_sample_rate": 48000
+  }
+}

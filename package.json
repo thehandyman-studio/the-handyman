@@ -34,7 +34,8 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "voice": ".venv/bin/python scripts/voice/voice.py"
   },
   "allowScripts": {
     "esbuild": false
