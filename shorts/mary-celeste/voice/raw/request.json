@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-05 11:15:01",
+  "voice_name": "Wyman - The Storyteller",
+  "voice_id": "KYpkPJwl1dpLc9QpMwnO",
+  "model_id": "eleven_multilingual_v2",
+  "output_format": "mp3_44100_128",
+  "voice_settings": {
+    "stability": 0.35,
+    "similarity_boost": 0.8,
+    "style": 0.75,
+    "use_speaker_boost": true
+  },
+  "text": "Imagine discovering a ship drifting alone in the Atlantic. Its sails damaged. Its deck empty. Not a single person aboard. On December 4th, 1872, the crew of the ship Dei Gratia spotted a vessel near the Azores. It was the Mary Celeste. Just weeks earlier, she had left New York, carrying ten people: Captain Benjamin Briggs, his wife, their two-year-old daughter, and seven crew members. But now, all ten were gone. And the strangest part? The ship was still seaworthy. Food and water remained. Its cargo of 1,701 barrels of industrial alcohol was largely untouched. There were no bodies. No clear signs of a struggle. But the lifeboat was gone. The last entry in the ship's log was dated November 25th. After that, silence. Did the crew abandon ship in a panic? Were they caught in a sudden disaster? No one knows. The Mary Celeste was found. But the ten people aboard were never seen again.",
+  "characters": 892,
+  "credits_charged": "392",
+  "request_id": "t5y60EljDaUlpz7ylvPg"
+}

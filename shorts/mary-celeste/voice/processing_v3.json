@@ -1,0 +1,47 @@
+{
+  "source": "voice.wav",
+  "gaps": [
+    [
+      4.83,
+      5.32,
+      0.34
+    ],
+    [
+      5.93,
+      6.29,
+      0.06
+    ],
+    [
+      6.79,
+      7.35,
+      0.36
+    ],
+    [
+      8.2,
+      8.36,
+      0.04
+    ],
+    [
+      8.93,
+      9.2,
+      0.06
+    ],
+    [
+      29.44,
+      29.96,
+      1.24
+    ]
+  ],
+  "stretch": [
+    7.36,
+    9.8,
+    1.05
+  ],
+  "pitch": null,
+  "eq_comp_chain": "highpass=f=75:poles=2,equalizer=f=220:t=q:w=1.0:g=-1.5,equalizer=f=3000:t=q:w=1.0:g=1.5,deesser=i=0.4:m=0.5:f=0.5:s=o,acompressor=threshold=0.08:ratio=2.0:attack=15:release=180:knee=6:makeup=1",
+  "loudness_ref_LUFS": -20.3,
+  "loudness_v3_LUFS": -20.3,
+  "true_peak_v3_dBTP": -1.6,
+  "duration_v1_s": 60.595,
+  "duration_v3_s": 60.235
+}
