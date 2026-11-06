@@ -1,0 +1,5 @@
+# Python tools for voice + sound (scripts/voice, scripts/audio, scripts/*.py). Installed in .venv (Python 3.15).
+# Versions as used for the pilot (2026-11-06). Install: python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+numpy==2.5.4
+scipy==1.18.1
+pillow==13.0.0

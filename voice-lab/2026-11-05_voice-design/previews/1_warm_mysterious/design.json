@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-05 12:20:25",
+  "label": "Warm & Mysterious",
+  "request": {
+    "voice_description": "A young American man in his early twenties with a warm, slightly raspy voice and a mid-range pitch. He tells mystery stories for YouTube Shorts in an intimate, hushed but clear way, with controlled suspense: he slows down on key words, leans into them, and lets the tension hang in short pauses. Natural and conversational, never theatrical. Clear articulation, neutral General American accent. Not deep, not a documentary narrator, not monotone or robotic. Studio-quality recording.",
+    "model_id": "eleven_ttv_v3",
+    "text": "On December 4th, 1872, the crew of the ship Dei Gratia spotted a vessel near the Azores. It was the Mary Celeste. But now, all ten were gone. And the strangest part? The ship was still seaworthy.",
+    "auto_generate_text": false,
+    "guidance_scale": 5,
+    "loudness": 0.5,
+    "seed": 1872,
+    "should_enhance": false
+  },
+  "credits_charged": null,
+  "request_id": null,
+  "response_header_names": [
+    "Alt-Svc",
+    "Connection",
+    "Content-Length",
+    "Strict-Transport-Security",
+    "Via",
+    "access-control-allow-headers",
+    "access-control-allow-methods",
+    "access-control-allow-origin",
+    "access-control-max-age",
+    "content-type",
+    "date",
+    "server",
+    "vary",
+    "x-region",
+    "x-trace-id"
+  ],
+  "returned_text": "On December 4th, 1872, the crew of the ship Dei Gratia spotted a vessel near the Azores. It was the Mary Celeste. But now, all ten were gone. And the strangest part? The ship was still seaworthy.",
+  "previews": [
+    {
+      "file": "preview_1.mp3",
+      "generated_voice_id": "hzjBtcHq5VCEDfN7k4Dv",
+      "duration_secs": 14.918625,
+      "language": "en"
+    },
+    {
+      "file": "preview_2.mp3",
+      "generated_voice_id": "oYJgdHoOxUxUrOU307mU",
+      "duration_secs": 14.2916875,
+      "language": "en"
+    },
+    {
+      "file": "preview_3.mp3",
+      "generated_voice_id": "IPMhMxqtX1UONb6OsdyB",
+      "duration_secs": 14.6835625,
+      "language": "en"
+    }
+  ]
+}

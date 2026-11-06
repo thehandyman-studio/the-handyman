@@ -12,3 +12,32 @@ __pycache__
 _cache
 # merge backups made by scripts/bridge_merge.py
 backup
+
+# ---- THE HANDYMAN (2026-11-06): keep the repo small and private-safe ----
+# secrets (never commit keys)
+.env.*
+*.pem
+.claude/settings.local.json
+# third-party reference material: private study only, never published
+references/
+# large media: renders, audio, recordings stay on the Mac (back them up separately)
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.aiff
+*.m4a
+# experiments and file backups
+voice-lab/**/out/
+voice-lab/**/takes/
+**/_backup/
+**/_previous/
+**/raw_archive/
+# ...but keep the small, irreplaceable or render-critical audio (paid recordings, approved voice masters, public assets)
+!shorts/*/voice/takes/*/raw/elevenlabs.mp3
+!shorts/*/voice/takes/*/voice_master.wav
+!public/**/*.wav
+!public/**/*.mp3
+
+# rejected first processing of the City take (never used; reproducible from raw/elevenlabs.mp3) - Adrian 2026-11-06
+shorts/city-in-the-wall/voice/takes/john_mrab_v1/voice_master.wav

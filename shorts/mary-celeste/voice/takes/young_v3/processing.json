@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-05 17:33:50",
+  "source": "raw/elevenlabs.mp3",
+  "source_md5": "9fd1d7d3f71b873e8701f7d562ecc462",
+  "pitch_semitones": 0.4,
+  "tempo_factor": 1.0,
+  "engine": "rubberband -3 -F (R3 fine, formants kept)",
+  "sample_rate": 48000,
+  "duration_in_s": 75.2,
+  "duration_out_s": 75.2,
+  "words": 156,
+  "last_word_end_s": 75.224,
+  "words_md5": "3978df6ae3c32fca8a7d3db07c345ccf",
+  "profile": "young_storyteller",
+  "spoken": "narration_v2_expressive.txt",
+  "take": "young_v3",
+  "formants": true,
+  "eq": "highpass=f=70:poles=2,equalizer=f=220:t=q:w=1.0:g=-1.0,equalizer=f=3000:t=q:w=1.0:g=1.5",
+  "loudness_gain_db": -0.2,
+  "caption_rules": true
+}

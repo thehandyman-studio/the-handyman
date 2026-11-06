@@ -1,0 +1,68 @@
+{
+  "input": "words.json",
+  "threshold_dbfs": -58.7,
+  "min_pause_s": 0.15,
+  "median_s_per_letter": 0.0535,
+  "capped_words": [
+    {
+      "w": "part?",
+      "from_s": 0.4,
+      "to_s": 0.278
+    },
+    {
+      "w": "The",
+      "from_s": 0.48,
+      "to_s": 0.401
+    },
+    {
+      "w": "seaworthy…",
+      "from_s": 1.44,
+      "to_s": 0.626
+    },
+    {
+      "w": "lifeboat…",
+      "from_s": 1.2,
+      "to_s": 0.556
+    },
+    {
+      "w": "gone.",
+      "from_s": 1.568,
+      "to_s": 0.278
+    }
+  ],
+  "speech_start_s": 0.05,
+  "speech_end_s": 6.54,
+  "pauses": [
+    [
+      1.19,
+      1.8
+    ],
+    [
+      3.39,
+      4.14
+    ],
+    [
+      5.19,
+      5.73
+    ]
+  ],
+  "pause_after_word": {
+    "part? (#4)": [
+      1.19,
+      1.8
+    ],
+    "seaworthy… (#9)": [
+      3.39,
+      4.14
+    ],
+    "lifeboat… (#12)": [
+      5.19,
+      5.73
+    ]
+  },
+  "pauses_not_placed": [],
+  "stretches": {
+    "kept_inner_times": 0,
+    "re_spread": 4
+  }
+}

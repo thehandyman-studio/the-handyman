@@ -1,0 +1,26 @@
+{
+  "_comment": "Young American storyteller (chosen 2026-11-05): Voice Design variant 4 '4_warm_lively_conversational', preview 3, plus local post-processing like voice-lab/2026-11-05_voice-design/edited/4_preview3_pitch+0.4_eq.wav. Wyman stays the default (voice_config.json).",
+  "elevenlabs": {
+    "voice_name": "Young storyteller (Voice Design V4 preview 3)",
+    "voice_id": "zsUKKzH4jEzU99UESCSF",
+    "_voice_id_note": "Saved permanently in ElevenLabs on 2026-11-05 13:30 as 'Young Storyteller' (category generated) via POST /v1/text-to-voice; the permanent voice_id equals the preview id. Record: voice-lab/2026-11-05_voice-design/saved_voice.json.",
+    "source_generated_voice_id": "zsUKKzH4jEzU99UESCSF",
+    "model_id": "eleven_v3",
+    "output_format": "mp3_44100_128",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    },
+    "_voice_settings_note": "eleven_v3 stability: 0.0 Creative / 0.5 Natural / 1.0 Robust (docs). Natural = consistent over ~60 s. To be confirmed in a short test, like whether v3 returns word timings.",
+    "credits_per_char_estimate": 1.0
+  },
+  "postprocess": {
+    "pitch_semitones": 0.4,
+    "tempo_factor": 1.0,
+    "formants": true,
+    "eq": "highpass=f=70:poles=2,equalizer=f=220:t=q:w=1.0:g=-1.0,equalizer=f=3000:t=q:w=1.0:g=1.5",
+    "loudness_match": true,
+    "true_peak_max_dbtp": -1.0,
+    "output_sample_rate": 48000
+  }
+}

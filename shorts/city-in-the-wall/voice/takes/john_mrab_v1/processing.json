@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-06 14:01:20",
+  "source": "raw/elevenlabs.mp3",
+  "source_md5": "52a255f7c0ff6cc7467da07c76853b69",
+  "pitch_semitones": 0.0,
+  "tempo_factor": 1.1,
+  "engine": "rubberband -3 -F (R3 fine, formants kept)",
+  "sample_rate": 48000,
+  "duration_in_s": 53.52,
+  "duration_out_s": 48.655,
+  "words": 151,
+  "last_word_end_s": 48.727,
+  "words_md5": "a8a04e9a4bd324b4e5c131aab02abdc6",
+  "profile": "mrabsurdly_john",
+  "spoken": "narration_john.txt",
+  "take": "john_mrab_v1",
+  "formants": true,
+  "eq": null,
+  "loudness_gain_db": null,
+  "caption_rules": true
+}

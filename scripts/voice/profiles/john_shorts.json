@@ -1,0 +1,27 @@
+{
+  "_comment": "John - Conversational, energetic YouTube-Shorts delivery (test 2026-11-05). Based on profiles/john.json (not changed); only the voice settings differ. Loudness for Shorts is done in a separate step (voice-lab/2026-11-05_v3-test/enhance_john_shorts.py), the take's voice.wav stays unprocessed.",
+  "elevenlabs": {
+    "voice_name": "John - Conversational",
+    "voice_id": "OEHTkiHZj6OczWZHu0Aj",
+    "_voice_id_note": "Found 2026-11-05 via GET /v2/voices?search=John (exactly one match among 27 voices) and confirmed with GET /v1/voices/OEHTkiHZj6OczWZHu0Aj: HTTP 200, category 'professional' (PVC), status 'copied', no verification needed, notice period 730 days.",
+    "model_id": "eleven_v4",
+    "_model_note": "John is fine-tuned for eleven_v4 (and multilingual_v2, turbo/flash), not for eleven_v3. Same model as the Buster test for a fair comparison.",
+    "output_format": "mp3_44100_128",
+    "voice_settings": {
+      "stability": 0.35,
+      "similarity_boost": 0.75
+    },
+    "_voice_settings_note": "Eleven v4 has only Stability and Similarity. Stability 0.35 (John's default 0.50): lower = more expressive, more varied intonation and emphasis. Similarity 0.75 keeps John's own sound. Emphasis via CAPITALS in the text (STILL, GONE), no audio tags (no acting, no whispering).",
+    "credits_per_char_estimate": 1.0
+  },
+  "postprocess": {
+    "_note": "Natural, no effects: no pitch, no formant processing, no tempo change, no EQ, no loudness change. With pitch 0 and tempo 1.0 process_voice.py skips Rubber Band; only the format conversion MP3 -> 48 kHz / 24-bit mono WAV remains.",
+    "pitch_semitones": 0.0,
+    "tempo_factor": 1.0,
+    "formants": true,
+    "eq": "",
+    "loudness_match": false,
+    "true_peak_max_dbtp": -1.0,
+    "output_sample_rate": 48000
+  }
+}

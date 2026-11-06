@@ -1,0 +1,12 @@
+{
+  "_comment": "Captions for john_shorts_test.txt: emphasis capitals shown in normal case.",
+  "spoken_file": "john_shorts_test.txt",
+  "caption_reference": "narration.txt",
+  "remove_audio_tags": true,
+  "drop_punctuation_only_tokens": true,
+  "lowercase_emphasis_words": [
+    "STILL",
+    "GONE"
+  ],
+  "replace": []
+}

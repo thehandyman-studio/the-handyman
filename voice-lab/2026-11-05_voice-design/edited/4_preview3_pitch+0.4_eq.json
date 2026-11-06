@@ -1,0 +1,10 @@
+{
+  "source": "previews/4_warm_lively_conversational/preview_3.mp3",
+  "pitch_semitones": 0.4,
+  "engine": "rubberband -3 -F (R3 fine, formants kept), tempo unchanged",
+  "eq": "highpass=f=70:poles=2,equalizer=f=220:t=q:w=1.0:g=-1.0,equalizer=f=3000:t=q:w=1.0:g=1.5",
+  "gain_db": 0.6,
+  "loudness_source_LUFS": -19.8,
+  "loudness_out_LUFS": -19.8,
+  "true_peak_out_dBTP": -2.2
+}

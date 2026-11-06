@@ -1,0 +1,19 @@
+# Take john_mrab_v1 (2026-11-06) – John, Variante C
+- **Freigabe:** von Adrian ausdrücklich freigegeben. Eine Anfrage an ElevenLabs (Request `zLoanF2NAHqfkLbRdGt7`), **396 Credits**, 900 Zeichen.
+- **Stimme:** John - Conversational `OEHTkiHZj6OczWZHu0Aj`, eleven_v4, Stabilität 0,20, Ähnlichkeit 0,75 (Profil `mrabsurdly_john.json`)
+- **Text:** `voice/narration_john.txt`, die Sprechfassung aus SCRIPT.md unverändert. Untertitel-Referenz: `voice/narration.txt` (Original-Wortlaut).
+- **Nachbearbeitung (lokal):**
+  - Tempo ×1,10 (Rubber Band): 53,52 s → 48,65 s
+  - 21 Pausen auf 0,18 s gekürzt: → **45,51 s**
+  - -15,0 LUFS, True Peak -1,3 dBTP
+- **Prüfung:**
+  - Whisper erkennt alle 151 Wörter in der richtigen Reihenfolge. Ein „But“ fehlte im Gesamtdurchlauf, ist im Einzeltest aber klar zu hören.
+  - Die Regieanweisungen werden nicht mitgesprochen.
+  - Die Flüsterzeile „He's found us again“ ist rund 5 dB leiser als die Nachbarzeilen, das Flüstern wurde also umgesetzt.
+- **Untertitel:** `words_master.json` übernimmt die Schreibweise von `narration.txt`. Das Schild steht damit wie im Original in Großbuchstaben: „PLEASE DON'T OPEN THE NEXT WALL.“ Nur die Groß-/Kleinschreibung wurde angepasst, die Zeiten nicht. Vorher-Stand: `words_master.before-case.json`.
+- **Dateien:**
+  - `raw/` (Original-MP3, Wortzeiten von ElevenLabs, Anfrage)
+  - `voice.wav` (Tempo ×1,10)
+  - `voice_master.wav` (fertig)
+  - `words_master.json` (Wortzeiten für Bild und Untertitel)
+  - `processing.json`, `snap_report.json`, `master_report.json`

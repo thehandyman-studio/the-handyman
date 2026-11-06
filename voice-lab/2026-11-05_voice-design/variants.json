@@ -1,0 +1,26 @@
+{
+  "_comment": "Three ElevenLabs Voice Design prompts (2026-11-05). Same test text for all (test_text.txt). Previews only - nothing is saved as a permanent voice.",
+  "model_id": "eleven_ttv_v3",
+  "guidance_scale": 5,
+  "loudness": 0.5,
+  "seed": 1872,
+  "should_enhance": false,
+  "output_format": "mp3_44100_128",
+  "variants": [
+    {
+      "key": "1_warm_mysterious",
+      "label": "Warm & Mysterious",
+      "voice_description": "A young American man in his early twenties with a warm, slightly raspy voice and a mid-range pitch. He tells mystery stories for YouTube Shorts in an intimate, hushed but clear way, with controlled suspense: he slows down on key words, leans into them, and lets the tension hang in short pauses. Natural and conversational, never theatrical. Clear articulation, neutral General American accent. Not deep, not a documentary narrator, not monotone or robotic. Studio-quality recording."
+    },
+    {
+      "key": "2_warm_energetic",
+      "label": "Warm & Energetic",
+      "voice_description": "A young American man around twenty-one with a warm, slightly brighter, lightly raspy voice and a medium-high pitch. An energetic YouTube Shorts storyteller who sounds genuinely excited to share a strange true story: lively pacing, punchy emphasis, rising curiosity and a hint of a smile in his voice. Natural and conversational, clear articulation, General American accent. Not deep, not a documentary narrator, not monotone or robotic. Studio-quality recording."
+    },
+    {
+      "key": "3_warm_cinematic",
+      "label": "Warm & Cinematic",
+      "voice_description": "A charismatic young American man in his mid-twenties with a warm, slightly gravelly, distinctive voice and a mid-range pitch. A cinematic storyteller for YouTube Shorts with strong emotional range and dynamic emphasis: quiet and tense one moment, bold and gripping the next, landing big reveals with weight. Natural and confident, clear articulation, General American accent. Not a deep movie-trailer voice, not a documentary narrator, not monotone or robotic. Studio-quality recording."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "_comment": "Buster - Conversational, Original Eric (ElevenLabs Voice Library, added to My Voices by the user on 2026-11-05). Technical base: young_storyteller.json (not changed). Test profile - not used for production yet. Previous version (eleven_v3): scripts/voice/_backup/2026-11-05_before-buster-v4/buster.json.",
+  "elevenlabs": {
+    "voice_name": "Buster - Conversational, Original Eric",
+    "voice_id": "PmelHiOxd6s1PUEdOmwF",
+    "_voice_id_note": "Confirmed 2026-11-05 via GET /v1/voices/PmelHiOxd6s1PUEdOmwF: HTTP 200, category 'professional' (PVC), sharing status 'copied', no verification needed, notice period 730 days.",
+    "model_id": "eleven_v4",
+    "_model_note": "Changed from eleven_v3 on 2026-11-05: Buster is fine-tuned for eleven_v4 (and multilingual_v2, turbo/flash) but not for eleven_v3. eleven_v4 understands the same inline audio tags as v3 (e.g. [whispers], [softly]), so narration_v2_expressive.txt can stay as it is. Not yet tested: whether v4 returns character timings from /with-timestamps.",
+    "output_format": "mp3_44100_128",
+    "voice_settings": {
+      "stability": 0.53,
+      "similarity_boost": 0.75
+    },
+    "_natural_note": "2026-11-05: aim = Buster's own natural conversational sound (like his library sample). Stability 0.53 = his own default. Use spoken texts WITHOUT audio tags and without '…' pauses. Previous version: scripts/voice/_backup/2026-11-05_before-buster-natural/buster.json.",
+    "_voice_settings_note": "Eleven v4 uses only Stability and Similarity (official docs: 'Style and Speed sliders are not available in Eleven v4'), so style/speed/speaker boost are not sent. Lower stability = more expressive. clone_strength (only for PVCs fine-tuned for v4) is left at the ElevenLabs default (docs: 'For most voices, start at 0%'). Buster's own defaults: stability 0.53, similarity 0.75.",
+    "credits_per_char_estimate": 1.0
+  },
+  "postprocess": {
+    "_note": "Natural Buster, no effects: no pitch shift, no formant processing, no tempo change, no EQ, no loudness change. With pitch 0 and tempo 1.0 process_voice.py skips Rubber Band completely; the only remaining step is the format conversion MP3 -> 48 kHz / 24-bit mono WAV that the mix needs.",
+    "pitch_semitones": 0.0,
+    "tempo_factor": 1.0,
+    "formants": true,
+    "eq": "",
+    "loudness_match": false,
+    "true_peak_max_dbtp": -1.0,
+    "output_sample_rate": 48000
+  }
+}

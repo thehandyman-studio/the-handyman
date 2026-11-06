@@ -18,7 +18,8 @@ import urllib.error
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import die, load_config, read_api_key, read_narration, unique_dir, voice_dir  # noqa: E402
+from common import (check_take_rules, die, load_profile, read_api_key, read_spoken, unique_dir,  # noqa: E402
+                    voice_dir, work_dir)
 
 
 def main(argv=None):
@@ -26,12 +27,20 @@ def main(argv=None):
     ap.add_argument("short", help="short name (shorts/<name>) or path to a short folder")
     ap.add_argument("--confirm", action="store_true", help="really call ElevenLabs (uses credits)")
     ap.add_argument("--new", action="store_true", help="make a new take even if one exists (old one is archived)")
+    ap.add_argument("--profile", help="voice profile in scripts/voice/profiles/ (default: voice_config.json = Wyman)")
+    ap.add_argument("--spoken", help="spoken text file in voice/ (default: narration.txt)")
+    ap.add_argument("--take", help="take folder voice/takes/<take>/ (required with --profile or --spoken)")
     a = ap.parse_args(argv)
 
-    cfg = load_config()["elevenlabs"]
+    check_take_rules(a.profile, a.spoken, a.take)
+    cfg = load_profile(a.profile)["elevenlabs"]
+    if not cfg.get("voice_id"):
+        die(f"Profil '{a.profile}' hat noch keine gespeicherte Stimme (voice_id leer). "
+            "Die Stimme muss zuerst dauerhaft in ElevenLabs gespeichert und die ID im Profil eingetragen werden.")
     vdir = voice_dir(a.short)
-    raw = os.path.join(vdir, "raw")
-    text = read_narration(vdir)
+    wdir = work_dir(vdir, a.take)
+    raw = os.path.join(wdir, "raw")
+    text = read_spoken(vdir, a.spoken)
     n = len(text)
     est = round(n * cfg.get("credits_per_char_estimate", 1.0))
 
@@ -73,10 +82,14 @@ def main(argv=None):
     json.dump({"date": time.strftime("%Y-%m-%d %H:%M:%S"), "voice_name": cfg["voice_name"], "voice_id": cfg["voice_id"],
                "model_id": cfg["model_id"], "output_format": cfg["output_format"],
                "voice_settings": cfg["voice_settings"], "text": text, "characters": n,
-               "credits_charged": cost, "request_id": rid},
+               "credits_charged": cost, "request_id": rid,
+               **({"profile": a.profile, "spoken": a.spoken or "narration.txt", "take": a.take}
+                  if (a.profile or a.spoken or a.take) else {})},
               open(os.path.join(tmp, "request.json"), "w", encoding="utf-8"), indent=2, ensure_ascii=False)
+    if not data.get("alignment"):
+        print("WARNUNG: ElevenLabs hat keine Wortzeiten (alignment) geliefert - Untertitel brauchen eine andere Quelle.")
     if os.path.exists(raw):
-        arch = unique_dir(os.path.join(vdir, "raw_archive"))
+        arch = unique_dir(os.path.join(wdir, "raw_archive"))
         os.makedirs(os.path.dirname(arch), exist_ok=True)
         shutil.move(raw, arch)
         print(f"Alte Aufnahme archiviert: {arch}")

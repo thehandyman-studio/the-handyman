@@ -1,0 +1,21 @@
+{
+  "_comment": "Variant 5 (2026-11-05), saved locally only, not generated. Based on variant 4 preview_3: the reference audio below must be sent with the request, otherwise Voice Design creates an unrelated new voice. The current design_voices.py does NOT send reference audio yet - do not run variant 5 before the script supports it.",
+  "model_id": "eleven_ttv_v3",
+  "guidance_scale": 5,
+  "loudness": 0.5,
+  "seed": 1872,
+  "should_enhance": false,
+  "output_format": "mp3_44100_128",
+  "test_text_file": "test_text.txt",
+  "reference_audio_file": "previews/4_warm_lively_conversational/preview_3.mp3",
+  "reference_generated_voice_id": "zsUKKzH4jEzU99UESCSF",
+  "prompt_strength": null,
+  "_prompt_strength_note": "eleven_ttv_v3 only. Value range/default not stated in the docs; to be decided and verified before a real run.",
+  "variants": [
+    {
+      "key": "5_bright_clear_charismatic",
+      "label": "Bright, Clear & Charismatic (based on V4 preview 3)",
+      "voice_description": "A young American man, around twenty-two, with a bright, clear and distinctive mid-to-high register. His voice is warm and youthful with only a faint touch of texture: not deep, not heavily raspy, and never shrill or strained. He tells mysteries and unbelievable true stories the way a charismatic friend would: lively, natural and conversational, confident and emotionally expressive. His intonation moves noticeably, with clear shifts in emphasis and rhythm: he leans into key words, picks up speed with excitement, slows down and softens for suspense, and lets short, natural pauses land. Crisp, clear General American articulation that still sounds relaxed and human. Not monotone, not robotic, not announcer-like or overly polished. Clean, close-mic studio recording."
+    }
+  ]
+}

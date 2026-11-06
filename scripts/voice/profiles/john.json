@@ -1,0 +1,27 @@
+{
+  "_comment": "John - Conversational (ElevenLabs Voice Library, added to My Voices by the user on 2026-11-05). Test profile. Same natural, effect-free setup as profiles/buster.json (not changed).",
+  "elevenlabs": {
+    "voice_name": "John - Conversational",
+    "voice_id": "OEHTkiHZj6OczWZHu0Aj",
+    "_voice_id_note": "Found 2026-11-05 via GET /v2/voices?search=John (exactly one match among 27 voices) and confirmed with GET /v1/voices/OEHTkiHZj6OczWZHu0Aj: HTTP 200, category 'professional' (PVC), status 'copied', no verification needed, notice period 730 days.",
+    "model_id": "eleven_v4",
+    "_model_note": "John is fine-tuned for eleven_v4 (and multilingual_v2, turbo/flash), not for eleven_v3. Same model as the Buster test for a fair comparison.",
+    "output_format": "mp3_44100_128",
+    "voice_settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    },
+    "_voice_settings_note": "John's own defaults. Eleven v4 uses only Stability and Similarity (no style/speed/speaker boost). Use spoken texts without audio tags and without '…' pauses.",
+    "credits_per_char_estimate": 1.0
+  },
+  "postprocess": {
+    "_note": "Natural, no effects: no pitch, no formant processing, no tempo change, no EQ, no loudness change. With pitch 0 and tempo 1.0 process_voice.py skips Rubber Band; only the format conversion MP3 -> 48 kHz / 24-bit mono WAV remains.",
+    "pitch_semitones": 0.0,
+    "tempo_factor": 1.0,
+    "formants": true,
+    "eq": "",
+    "loudness_match": false,
+    "true_peak_max_dbtp": -1.0,
+    "output_sample_rate": 48000
+  }
+}

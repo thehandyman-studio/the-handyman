@@ -1,0 +1,49 @@
+{
+  "source": "voice.wav + words_snapped.json",
+  "reference": "narration.txt",
+  "max_pause_s": 0.18,
+  "target_lufs": -15.0,
+  "pauses_before_s": [
+    0.3,
+    0.23,
+    0.25,
+    0.38,
+    0.26,
+    0.38,
+    0.34,
+    0.2,
+    0.34,
+    0.42,
+    0.34,
+    0.33,
+    0.32,
+    0.29,
+    0.44,
+    0.38,
+    0.36,
+    0.3,
+    0.45,
+    0.29,
+    0.33
+  ],
+  "pauses_shortened": 21,
+  "removed_s": 3.15,
+  "duration_before_s": 48.655,
+  "duration_after_s": 45.505,
+  "chain": "highpass=f=70:poles=2,equalizer=f=3000:t=q:w=1.0:g=1.5,deesser=i=0.35:m=0.5:f=0.5:s=o,acompressor=threshold=0.0398:ratio=2:attack=15:release=150:knee=6:makeup=1",
+  "pre_gain_db": -2.5,
+  "gain_db": 13.8,
+  "limiter_needed_db": 1.9,
+  "before": {
+    "lufs": -21.5,
+    "lra": 6.4,
+    "true_peak_dbtp": -2.1
+  },
+  "final": {
+    "lufs": -15.0,
+    "lra": 3.8,
+    "true_peak_dbtp": -1.3
+  },
+  "words": 151,
+  "validation_problems": []
+}

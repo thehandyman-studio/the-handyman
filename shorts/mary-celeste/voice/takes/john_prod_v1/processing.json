@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-05 18:11:32",
+  "source": "raw/elevenlabs.mp3",
+  "source_md5": "e0aedb627895549bd77560e7aa002ecf",
+  "pitch_semitones": 0.0,
+  "tempo_factor": 1.0,
+  "engine": "none (pitch 0, tempo 1: Rubber Band skipped, format conversion only)",
+  "sample_rate": 48000,
+  "duration_in_s": 55.28,
+  "duration_out_s": 55.28,
+  "words": 156,
+  "last_word_end_s": 55.36,
+  "words_md5": "54d2d5f7a16f66c432c351c072ef9861",
+  "profile": "john_shorts_fast",
+  "spoken": "narration_john.txt",
+  "take": "john_prod_v1",
+  "formants": true,
+  "eq": null,
+  "loudness_gain_db": null,
+  "caption_rules": true
+}

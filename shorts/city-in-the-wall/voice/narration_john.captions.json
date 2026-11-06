@@ -1,0 +1,16 @@
+{
+  "_comment": "Caption rules for narration_john.txt (City in the Wall, John variant C): delivery tags removed, emphasis capitals shown in normal case; the sign line keeps the original capitals (see narration.txt).",
+  "spoken_file": "narration_john.txt",
+  "caption_reference": "narration.txt",
+  "remove_audio_tags": true,
+  "drop_punctuation_only_tokens": true,
+  "lowercase_emphasis_words": [
+    "ENTIRE",
+    "CITY",
+    "THOUSANDS",
+    "SCREAMING",
+    "ALL",
+    "OPPOSITE"
+  ],
+  "replace": []
+}

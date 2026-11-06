@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-06 14:01:14",
+  "voice_name": "John - Conversational",
+  "voice_id": "OEHTkiHZj6OczWZHu0Aj",
+  "model_id": "eleven_v4",
+  "output_format": "mp3_44100_128",
+  "voice_settings": {
+    "stability": 0.2,
+    "similarity_boost": 0.75
+  },
+  "text": "[energetic, fast-paced] He broke a hole in his wall… and discovered an ENTIRE civilization living inside it. Behind the plaster wasn't insulation, bricks, or pipes. It was an entire CITY. Tiny streets, glowing windows, little cars, and THOUSANDS of people going about their daily lives. At first, he thought it was just a model. But then, a tiny man looked up, pointed directly at him, and started SCREAMING. The handyman leaned closer. Suddenly, every person in the city stopped moving. Then they ALL looked up at him. He slowly raised his hand. Thousands of tiny people waved back. But one little man climbed onto a rooftop and held up a sign. It read: \"PLEASE don't open the NEXT wall.\" The handyman froze. Then came three loud knocks from the OPPOSITE wall. A tiny voice inside the city whispered: [whispers] \"He's found us again.\" The handyman stepped back. And then… the hammer struck the wall.",
+  "characters": 900,
+  "credits_charged": "396",
+  "request_id": "zLoanF2NAHqfkLbRdGt7",
+  "profile": "mrabsurdly_john",
+  "spoken": "narration_john.txt",
+  "take": "john_mrab_v1"
+}

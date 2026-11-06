@@ -1,0 +1,54 @@
+{
+  "_comment": "Single source for picture (src/videos/mary-celeste/scenes.ts) and sound (scripts/audio/shortmix.py). Times are WORDS of the voice take; null = start of the video. Word phrases: case/punctuation-insensitive, 'nth' = occurrence (0-based).",
+  "title": "Mary Celeste",
+  "voice": "voice/takes/john_prod_v1/voice_master.wav",
+  "words": "voice/takes/john_prod_v1/words_master.json",
+  "tail_s": 1.0,
+  "scenes": [
+    { "id": 1, "start": null, "amb": "sea" },
+    { "id": 2, "start": "Its sails", "amb": "deck" },
+    { "id": 3, "start": "On December", "amb": "sea" },
+    { "id": 4, "start": "It was the Mary", "amb": "sea" },
+    { "id": 5, "start": "Just weeks", "amb": "harbor" },
+    { "id": 6, "start": "But now", "amb": "deck" },
+    { "id": 7, "start": "The ship was still", "amb": "sea" },
+    { "id": 8, "start": "There were no bodies", "amb": "interior" },
+    { "id": 9, "start": "But the lifeboat", "amb": "deck" },
+    { "id": 10, "start": "The last entry", "amb": "interior" },
+    { "id": 11, "start": "Did the crew", "amb": "storm" },
+    { "id": 12, "start": "The Mary Celeste was found", "amb": "sea" }
+  ],
+  "xfade": { "5": 10, "6": 10, "11": 8 },
+  "music": {
+    "key_hz": 73.42,
+    "sections": [
+      { "from": null, "mood": "dark_pulse" },
+      { "from": "Just weeks", "mood": "memory" },
+      { "from": "But now", "mood": "tension" },
+      { "from": "silence", "mood": "dropout" },
+      { "from": "Did the crew", "mood": "swell" },
+      { "from": "No one", "mood": "hit_hold" },
+      { "from": "The Mary Celeste was found", "mood": "finale" }
+    ]
+  },
+  "events": [
+    { "type": "whoosh", "at": "Its sails" },
+    { "type": "flap", "at": "sails", "dur": 1.4 },
+    { "type": "creak", "at": "deck" },
+    { "type": "whoosh", "at": "Not" },
+    { "type": "whoosh", "at": "On December" },
+    { "type": "riser", "to": "Mary", "dur": 1.2 },
+    { "type": "boom", "at": "Mary" },
+    { "type": "whoosh", "at": "Just weeks" },
+    { "type": "boom", "at": "gone", "nth": 0, "gain": 0.8 },
+    { "type": "riser", "to": "strangest", "dur": 0.8 },
+    { "type": "thunk", "at": "1,701" },
+    { "type": "creak", "at": "bodies" },
+    { "type": "boom", "at": "gone", "nth": 1 },
+    { "type": "whoosh", "at": "After" },
+    { "type": "whoosh", "at": "Did the crew" },
+    { "type": "boom", "at": "No one", "gain": 1.1 },
+    { "type": "whoosh", "at": "But the ten" },
+    { "type": "boom", "at": "again", "gain": 0.9, "tail": true }
+  ]
+}

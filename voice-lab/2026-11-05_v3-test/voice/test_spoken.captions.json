@@ -1,0 +1,9 @@
+{
+  "_comment": "Caption rules for the v3 test text.",
+  "spoken_file": "test_spoken.txt",
+  "caption_reference": "narration.txt",
+  "remove_audio_tags": true,
+  "drop_punctuation_only_tokens": true,
+  "lowercase_emphasis_words": [],
+  "replace": []
+}

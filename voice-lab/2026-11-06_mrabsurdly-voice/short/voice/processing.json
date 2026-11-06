@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-05 11:15:03",
+  "source": "raw/elevenlabs.mp3",
+  "source_md5": "683b7a59158c5a01170ebf5dded17f98",
+  "pitch_semitones": 1.0,
+  "tempo_factor": 1.04,
+  "engine": "rubberband -3 -F (R3 fine, formants kept)",
+  "sample_rate": 48000,
+  "duration_in_s": 63.019,
+  "duration_out_s": 60.595,
+  "words": 156,
+  "last_word_end_s": 60.595,
+  "words_md5": "30e40d13cb19a14c270cbd07d62ab5cf"
+}

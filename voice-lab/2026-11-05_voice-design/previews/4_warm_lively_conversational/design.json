@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-05 12:37:04",
+  "label": "Warm & Lively Conversational",
+  "request": {
+    "voice_description": "A young American man in his early twenties with a bright, mid-to-high register and a warm, slightly raspy texture. He sounds like a relaxed, likable guy telling a friend an unbelievable true story: natural and conversational, with a loose, easygoing rhythm and lively, expressive intonation that clearly rises and falls. He builds suspense through dynamic vocal variation, pulling his voice back for tense moments and lifting it with genuine excitement on the reveals. He uses expressive emphasis on key words and short, natural pauses. Charismatic, emotionally engaged and authentic. Clear General American accent with relaxed, natural articulation. Not deep, not a narrator or newsreader, not polished or announcer-like, not monotone or robotic. Clean, close-mic studio recording.",
+    "model_id": "eleven_ttv_v3",
+    "text": "On December 4th, 1872, the crew of the ship Dei Gratia spotted a vessel near the Azores. It was the Mary Celeste. But now, all ten were gone. And the strangest part? The ship was still seaworthy.",
+    "auto_generate_text": false,
+    "guidance_scale": 5,
+    "loudness": 0.5,
+    "seed": 1872,
+    "should_enhance": false
+  },
+  "credits_charged": null,
+  "request_id": null,
+  "response_header_names": [
+    "Alt-Svc",
+    "Connection",
+    "Content-Length",
+    "Strict-Transport-Security",
+    "Via",
+    "access-control-allow-headers",
+    "access-control-allow-methods",
+    "access-control-allow-origin",
+    "access-control-max-age",
+    "content-type",
+    "date",
+    "server",
+    "vary",
+    "x-region",
+    "x-trace-id"
+  ],
+  "returned_text": "On December 4th, 1872, the crew of the ship Dei Gratia spotted a vessel near the Azores. It was the Mary Celeste. But now, all ten were gone. And the strangest part? The ship was still seaworthy.",
+  "previews": [
+    {
+      "file": "preview_1.mp3",
+      "generated_voice_id": "1gUeYQZvQqDKbINCzlsr",
+      "duration_secs": 14.918625,
+      "language": "en"
+    },
+    {
+      "file": "preview_2.mp3",
+      "generated_voice_id": "ZgILFwi71ifQXQvc8HWU",
+      "duration_secs": 13.2468125,
+      "language": "en"
+    },
+    {
+      "file": "preview_3.mp3",
+      "generated_voice_id": "zsUKKzH4jEzU99UESCSF",
+      "duration_secs": 12.7505,
+      "language": "en"
+    }
+  ]
+}

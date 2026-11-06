@@ -1,0 +1,17 @@
+{
+  "_comment": "Caption rules for narration_v2_expressive.txt (Mary Celeste). The spoken text differs from what the captions show; apply these when building the caption words from the ElevenLabs timings.",
+  "spoken_file": "narration_v2_expressive.txt",
+  "caption_reference": "narration.txt",
+  "remove_audio_tags": true,
+  "drop_punctuation_only_tokens": true,
+  "lowercase_emphasis_words": [
+    "SINGLE",
+    "ALL"
+  ],
+  "replace": [
+    {
+      "spoken": "seventeen hundred and one",
+      "caption": "1,701"
+    }
+  ]
+}

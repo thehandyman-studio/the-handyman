@@ -1,0 +1,17 @@
+{
+  "_comment": "Caption rules for narration_john.txt (John production take): delivery tag removed, emphasis capitals in normal case, spoken number shown as 1,701.",
+  "spoken_file": "narration_john.txt",
+  "caption_reference": "narration.txt",
+  "remove_audio_tags": true,
+  "drop_punctuation_only_tokens": true,
+  "lowercase_emphasis_words": [
+    "STILL",
+    "GONE"
+  ],
+  "replace": [
+    {
+      "spoken": "seventeen hundred and one",
+      "caption": "1,701"
+    }
+  ]
+}

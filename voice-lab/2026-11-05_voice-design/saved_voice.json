@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-05 13:30:16",
+  "http_status": 200,
+  "voice_id": "zsUKKzH4jEzU99UESCSF",
+  "name": "Young Storyteller",
+  "category": "generated",
+  "request": {
+    "voice_name": "Young Storyteller",
+    "voice_description": "A young American man in his early twenties with a bright, mid-to-high register and a warm, slightly raspy texture. He sounds like a relaxed, likable guy telling a friend an unbelievable true story: natural and conversational, with a loose, easygoing rhythm and lively, expressive intonation that clearly rises and falls. He builds suspense through dynamic vocal variation, pulling his voice back for tense moments and lifting it with genuine excitement on the reveals. He uses expressive emphasis on key words and short, natural pauses. Charismatic, emotionally engaged and authentic. Clear General American accent with relaxed, natural articulation. Not deep, not a narrator or newsreader, not polished or announcer-like, not monotone or robotic. Clean, close-mic studio recording.",
+    "generated_voice_id": "zsUKKzH4jEzU99UESCSF"
+  },
+  "response_headers": {
+    "x-trace-id": "9942accf6d9f0198daa5eddb3bc93f1a"
+  },
+  "response": {
+    "voice_id": "zsUKKzH4jEzU99UESCSF",
+    "name": "Young Storyteller",
+    "samples": null,
+    "category": "generated",
+    "fine_tuning": {
+      "is_allowed_to_fine_tune": false,
+      "state": {},
+      "verification_failures": [],
+      "verification_attempts_count": 0,
+      "manual_verification_requested": false,
+      "language": null,
+      "progress": {},
+      "message": {},
+      "dataset_duration_seconds": null,
+      "verification_attempts": null,
+      "slice_ids": null,
+      "manual_verification": null,
+      "max_verification_attempts": null,
+      "next_max_verification_attempts_reset_unix_ms": null
+    },
+    "labels": {},
+    "description": "A young American man in his early twenties with a bright, mid-to-high register and a warm, slightly raspy texture. He sounds like a relaxed, likable guy telling a friend an unbelievable true story: natural and conversational, with a loose, easygoing rhythm and lively, expressive intonation that clearly rises and falls. He builds suspense through dynamic vocal variation, pulling his voice back for tense moments and lifting it with genuine excitement on the reveals. He uses expressive emphasis on key words and short, natural pauses. Charismatic, emotionally engaged and authentic. Clear General American accent with relaxed, natural articulation. Not deep, not a narrator or newsreader, not polished or announcer-like, not monotone or robotic. Clean, close-mic studio recording.",
+    "preview_url": "https://storage.googleapis.com/eleven-public-prod/database/workspace/dc18b71e368948a988091bcedac3d063/voices/zsUKKzH4jEzU99UESCSF/ef25aa03-d345-46b0-ae15-aeb750797122.mp3",
+    "available_for_tiers": [],
+    "settings": {
+      "stability": 0.5,
+      "use_speaker_boost": true,
+      "similarity_boost": 0.75,
+      "style": 0.0,
+      "speed": 1.0
+    },
+    "sharing": null,
+    "high_quality_base_model_ids": [],
+    "verified_languages": [],
+    "collection_ids": null,
+    "safety_control": null,
+    "voice_verification": null,
+    "permission_on_resource": null,
+    "is_owner": null,
+    "is_legacy": false,
+    "is_mixed": false,
+    "favorited_at_unix": null,
+    "created_at_unix": 1793881815,
+    "is_bookmarked": null,
+    "recording_quality": null,
+    "labelling_status": null,
+    "recording_quality_reason": null,
+    "orb_thumbnail_signed_urls": null
+  }
+}

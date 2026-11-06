@@ -1,0 +1,211 @@
+{
+  "_comment": "AUDIO PREPARATION for the City short. Voice = V3 (selected by Adrian 2026-11-06, see voice/takes/john_mrab_v1_V3/SELECTED.md). Full sound plan: shorts/city-in-the-wall/SOUND_PLAN.md (awaiting approval; NOT mixed yet). Scenes/music/events below are the earlier draft and will be replaced by the plan.",
+  "title": "The City Hidden Inside a Wall",
+  "voice": "voice/takes/john_mrab_v1_V3/voice_master.wav",
+  "words": "voice/takes/john_mrab_v1_V3/words_master.json",
+  "tail_s": 0.45,
+  "loop": true,
+  "scenes": [
+    {
+      "id": 1,
+      "start": null,
+      "amb": "harbor",
+      "place": "city (shot 1, loop start: impact)"
+    },
+    {
+      "id": 2,
+      "start": "and discovered",
+      "amb": "interior",
+      "place": "room (2-4)"
+    },
+    {
+      "id": 3,
+      "start": "It was",
+      "amb": "harbor",
+      "place": "city (5-9)"
+    },
+    {
+      "id": 4,
+      "start": "At first",
+      "amb": "interior",
+      "place": "room (10)"
+    },
+    {
+      "id": 5,
+      "start": "But then",
+      "amb": "harbor",
+      "place": "city (11-12)"
+    },
+    {
+      "id": 6,
+      "start": "The handyman",
+      "amb": "interior",
+      "place": "room (13)"
+    },
+    {
+      "id": 7,
+      "start": "Suddenly",
+      "amb": "harbor",
+      "place": "city (14-15)"
+    },
+    {
+      "id": 8,
+      "start": "He slowly",
+      "amb": "interior",
+      "place": "room (16)"
+    },
+    {
+      "id": 9,
+      "start": "Thousands of tiny",
+      "amb": "harbor",
+      "place": "city (17-19)"
+    },
+    {
+      "id": 10,
+      "start": "The handyman froze",
+      "amb": "interior",
+      "place": "room (20-21b)"
+    },
+    {
+      "id": 11,
+      "start": "A tiny voice",
+      "amb": "harbor",
+      "place": "city (22)"
+    },
+    {
+      "id": 12,
+      "start": "The handyman stepped",
+      "amb": "interior",
+      "place": "room (23-24a)"
+    },
+    {
+      "id": 13,
+      "start": "struck",
+      "amb": "harbor",
+      "place": "city (24b, loop end = shot 1 close-up)"
+    }
+  ],
+  "xfade": {
+    "4": 8,
+    "9": 8,
+    "11": 8
+  },
+  "music": {
+    "key_hz": 73.42,
+    "sections": [
+      {
+        "from": null,
+        "mood": "tension"
+      },
+      {
+        "from": "It was",
+        "mood": "swell"
+      },
+      {
+        "from": "At first",
+        "mood": "memory"
+      },
+      {
+        "from": "But then",
+        "mood": "tension"
+      },
+      {
+        "from": "Suddenly",
+        "mood": "dropout"
+      },
+      {
+        "from": "Then they all",
+        "mood": "swell"
+      },
+      {
+        "from": "Thousands of tiny",
+        "mood": "finale"
+      },
+      {
+        "from": "But one",
+        "mood": "tension"
+      },
+      {
+        "from": "The handyman froze",
+        "mood": "hit_hold"
+      },
+      {
+        "from": "A tiny voice",
+        "mood": "dark_pulse"
+      },
+      {
+        "from": "And then",
+        "mood": "tension"
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "boom",
+      "at": "He",
+      "gain": 1.2,
+      "_note": "frame 0: the breach (the loop's impact)"
+    },
+    {
+      "type": "thunk",
+      "at": "discovered",
+      "_note": "plaster settling"
+    },
+    {
+      "type": "whoosh",
+      "at": "It was"
+    },
+    {
+      "type": "whoosh",
+      "at": "glowing"
+    },
+    {
+      "type": "whoosh",
+      "at": "little"
+    },
+    {
+      "type": "whoosh",
+      "at": "and started"
+    },
+    {
+      "type": "boom",
+      "at": "screaming",
+      "gain": 0.4,
+      "_note": "placeholder until a tiny scream exists"
+    },
+    {
+      "type": "whoosh",
+      "at": "But one"
+    },
+    {
+      "type": "whoosh",
+      "at": "Then came"
+    },
+    {
+      "type": "thunk",
+      "at": "three",
+      "_note": "knock 1"
+    },
+    {
+      "type": "thunk",
+      "at": "loud",
+      "_note": "knock 2"
+    },
+    {
+      "type": "thunk",
+      "at": "knocks",
+      "_note": "knock 3 (the breach + eye)"
+    },
+    {
+      "type": "riser",
+      "to": "wall",
+      "nth": 3,
+      "dur": 1.6,
+      "_note": "rises into the loop impact"
+    },
+    {
+      "type": "creak",
+      "at": "hammer"
+    }
+  ]
+}

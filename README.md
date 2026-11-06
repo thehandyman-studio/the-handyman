@@ -1,54 +1,26 @@
-# Remotion video
+# THE HANDYMAN – YouTube Shorts
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.apng">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+*Every job hides a mystery.*
 
-Welcome to your Remotion project!
+Vertikale 3D-Cartoon-Shorts (9:16, 40–65 s, Englisch) mit der wiederkehrenden Hauptfigur **The Handyman**. Gebaut mit Remotion und three.js; Stimme von John (ElevenLabs); Musik und Geräusche werden lokal synthetisiert.
 
-## Commands
+- **Für Claude:** `CLAUDE.md` (zentrale Anweisung) und `.claude/skills/the-handyman-short/SKILL.md`
+- **Marke, Figur, Standard, Ablauf:**
+  - `docs/HANDYMAN_BRAND.md`
+  - `docs/HANDYMAN_CHARACTER_BIBLE.md`
+  - `docs/HANDYMAN_STANDARD.md`
+  - `docs/PRODUCTION_WORKFLOW.md`
+- **Episoden:** `docs/EPISODES.md` · Stand: `STATUS.md`
+- **GitHub / Claude im Browser:** `docs/CLAUDE_BROWSER_SETUP.md`
 
-**Install Dependencies**
-
-```console
-npm i --loglevel=error
+## Einrichtung auf einem Mac
+```sh
+npm ci                                   # Node-Pakete (Versionen gepinnt, postprocessing 3.0.4)
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+brew install ffmpeg rubberband whisper-cpp   # + Whisper-Modell medium.en nach ~/whisper-models/
+echo 'ELEVENLABS_API_KEY=…' > .env       # nur lokal, wird von Git ignoriert
+scripts/check-setup.sh                   # prüft alles
+npm run dev                              # Remotion Studio (Vorschau im Browser)
 ```
 
-**Start Preview**
-
-```console
-npm run dev
-```
-
-**Render video**
-
-```console
-npx remotion render
-```
-
-**Upgrade Remotion**
-
-```console
-npx remotion upgrade
-```
-
-## Docs
-
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+Remotion-Lizenz: Für manche Firmen ist eine Firmenlizenz nötig, siehe https://github.com/remotion-dev/remotion/blob/main/LICENSE.md

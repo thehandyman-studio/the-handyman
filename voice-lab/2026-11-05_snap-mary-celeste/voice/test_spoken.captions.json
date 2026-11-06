@@ -1,0 +1,9 @@
+{
+  "_comment": "Caption rules for the Mary Celeste v1 test (plain narration, no tags).",
+  "spoken_file": "narration.txt",
+  "caption_reference": "narration.txt",
+  "remove_audio_tags": true,
+  "drop_punctuation_only_tokens": true,
+  "lowercase_emphasis_words": [],
+  "replace": []
+}
