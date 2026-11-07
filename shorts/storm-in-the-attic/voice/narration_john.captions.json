@@ -1,0 +1,17 @@
+{
+  "_comment": "Caption rules for narration_john.txt (Episode 2, The Storm Hiding in the Attic, John profile mrabsurdly_john): delivery tags removed, emphasis capitals shown in normal case (captions follow narration.txt). Script v2 (155 words), approved in principle by Adrian 2026-11-06.",
+  "spoken_file": "narration_john.txt",
+  "caption_reference": "narration.txt",
+  "remove_audio_tags": true,
+  "drop_punctuation_only_tokens": true,
+  "lowercase_emphasis_words": [
+    "FORTY",
+    "TINY",
+    "BLACK",
+    "FOOT",
+    "WHY",
+    "EVERY",
+    "BACK"
+  ],
+  "replace": []
+}
