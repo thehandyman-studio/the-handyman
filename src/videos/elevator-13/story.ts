@@ -94,8 +94,8 @@ const ramp = (f: number, a: number, n: number) => clamp01((f - a) / Math.max(1, 
 export const doorsAt = (f: number) => {
   if (f < at("closed")) return 1;                                                 // open while he works (hall behind)
   if (f < at("When")) return 1 - glide(ramp(f, at("closed") - 4, 16));            // close, stay shut during the fall
-  if (f < at("One")) return glide(ramp(f, at("When") + 6, 58));                  // slowly open on the city
-  if (f < at("Suddenly")) return 1 - glide(ramp(f, at("One") + 3, 20));         // behind him they shut (off screen)
+  if (f < at("One of the")) return glide(ramp(f, at("When") + 6, 58));                  // slowly open on the city
+  if (f < at("Suddenly")) return 1 - glide(ramp(f, at("One of the") + 3, 20));         // behind him they shut (off screen)
   if (f < at("for", 2) - 4) return glide(ramp(f, at("Suddenly") + 9, 22));      // ... and open again
   return 1 - glide(ramp(f, at("for", 2) - 4, 26));                              // shut on "him"
 };

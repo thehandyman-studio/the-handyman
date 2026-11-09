@@ -149,7 +149,7 @@ def score(W, D, n):
     # ---- F "Suddenly" - end: the loop. Drone, the motif complete on "glowing again", swell into the 13
     tS, T13 = t("Suddenly"), D - 7 / FPS
     padc([D2 * 0.5, D2, m(D2, 7)], tS, D - 0.9, 0.24, att=0.8, rel=0.6, warm=300)
-    motif(t("glowing") - 0.05, MOT, 0.4, 0.42)
+    motif(t("glowing", 1) - 0.05, MOT, 0.4, 0.42)
     padc([m(D2, 27), m(D2, 28)], t("And this"), D - 0.6, 0.1, att=0.8, rel=0.4, warm=3500)  # high F/F#: unresolved
     M.add(timpani(D2, 0.55, r, 1.5), t("waiting"), 0.5)
     sw = cymbal(0.7, r, D - 0.3 - t("waiting"), 1.0)[::-1]
@@ -206,7 +206,7 @@ def effects(W, D, n):
     X.add(st(E.doors_slide(1.9, r, False)), t("When") + 0.2, 0.55)
     for k in range(4):                                                                    # cautious steps out
         X.add(pan(E.footstep(r, 0.6), 0.1 - 0.05 * k), t("Empty") - 0.2 + k * 0.48, 0.5)
-    X.add(st(E.doors_slide(0.7, r, True)), t("One") + 0.1, 0.18)                          # far behind him, they close
+    X.add(st(E.doors_slide(0.7, r, True)), t("One of the") + 0.1, 0.18)                          # far behind him, they close
     X.add(E.ding(r, 1.0), t("Suddenly") - 0.12, 0.8)
     X.add(st(E.doors_slide(0.7, r, False)), t("Suddenly") + 0.3, 0.6)
     X.add(st(creak(0.8, r, 70, 50)), t("himself") + 0.6, 0.15)
