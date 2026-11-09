@@ -1,0 +1,8 @@
+{
+  "_comment": "Episode 7 audio inputs for scripts/audio/elevatormix.py. PREVIEW state (2026-11-09): estimated word timings, no narration yet (voice = null). After the John take: words -> voice/takes/<take>_V3/words_timed.json, voice -> voice/takes/<take>_V3/voice_timed.wav (both made by scripts/voice/insert_beats.py), then re-run the mix.",
+  "title": "The Elevator Had a Floor That Didn't Exist",
+  "words": "voice/estimate/words_timed.json",
+  "voice": null,
+  "tail_s": 1.6,
+  "loop": true
+}

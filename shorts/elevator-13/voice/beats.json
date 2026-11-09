@@ -1,0 +1,16 @@
+{
+  "_comment": "Episode 7: designed silent beats inserted into the narration AFTER these words (seconds). Applied by scripts/voice/insert_beats.py to words (and the voice wav) -> words_timed.json / voice_timed.wav. The picture and the mix read the *_timed files. Tune these after the real John take so the video lands at 56-60 s.",
+  "tail_s": 1.6,
+  "beats": [
+    {"after": "wrong.", "s": 0.35, "why": "13 about to light"},
+    {"after": "allow.", "s": 1.45, "why": "rumble peaks, sudden stop, silence before the doors open"},
+    {"after": "seeing.", "s": 0.3, "why": "breath before the reveal"},
+    {"after": "city.", "s": 0.35, "why": "let the first wide shot land"},
+    {"after": "windows.", "s": 0.6, "why": "the reveal breathes"},
+    {"after": "familiar.", "s": 0.25, "why": "head turn"},
+    {"after": "above.", "s": 0.3, "why": "comparison cut"},
+    {"after": "himself.", "s": 1.35, "why": "second Leo looks up, real Leo freezes (silence)"},
+    {"after": "opened.", "s": 0.35, "why": "slow turn"},
+    {"after": "again.", "s": 0.45, "why": "look back at the dark window"}
+  ]
+}

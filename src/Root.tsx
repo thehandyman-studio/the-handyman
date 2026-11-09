@@ -7,6 +7,7 @@ import { FigureScene, FIGURE_SCENE_FRAMES } from "./videos/figure-test/FigureSce
 import { CityWallTest, CITY_TEST_FRAMES } from "./videos/city-in-the-wall/CityWall";
 import { CityLookTest } from "./videos/city-in-the-wall/lookdev/LookTest";
 import { CityWallShort, CITY_FRAMES } from "./videos/city-in-the-wall/CityWallShort";
+import { Elevator13Short, ELEVATOR_FRAMES } from "./videos/elevator-13/Elevator13Short";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -71,6 +72,15 @@ export const RemotionRoot: React.FC = () => {
         id="CityWallShort"
         component={CityWallShort}
         durationInFrames={CITY_FRAMES}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      {/* THE HANDYMAN Episode 7 "The Elevator Had a Floor That Didn't Exist": full picture, 32 shots, seamless loop */}
+      <Composition
+        id="Elevator13Short"
+        component={Elevator13Short}
+        durationInFrames={ELEVATOR_FRAMES}
         fps={30}
         width={1080}
         height={1920}
