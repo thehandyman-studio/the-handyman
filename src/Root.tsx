@@ -8,6 +8,7 @@ import { CityWallTest, CITY_TEST_FRAMES } from "./videos/city-in-the-wall/CityWa
 import { CityLookTest } from "./videos/city-in-the-wall/lookdev/LookTest";
 import { CityWallShort, CITY_FRAMES } from "./videos/city-in-the-wall/CityWallShort";
 import { StormAtticShort, STORM_FRAMES } from "./videos/storm-in-the-attic/StormAtticShort";
+import { ChannelAvatar, ChannelBanner } from "./videos/channel-art/ChannelArt";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -85,6 +86,9 @@ export const RemotionRoot: React.FC = () => {
         width={1080}
         height={1920}
       />
+      {/* THE HANDYMAN channel art: profile picture 800x800 and banner 2560x1440 (stills, frame 0) */}
+      <Composition id="ChannelAvatar" component={ChannelAvatar} durationInFrames={1} fps={30} width={800} height={800} />
+      <Composition id="ChannelBanner" component={ChannelBanner} durationInFrames={1} fps={30} width={2560} height={1440} />
     </>
   );
 };

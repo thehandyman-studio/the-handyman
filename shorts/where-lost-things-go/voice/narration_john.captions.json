@@ -1,0 +1,17 @@
+{
+  "_comment": "Caption rules for narration_john.txt (Episode 3 v2, Where Lost Things Go: he loses his hammer and follows it). Delivery tags removed, emphasis capitals in normal case; captions follow narration.txt. DRAFT, waits for Adrian's approval.",
+  "spoken_file": "narration_john.txt",
+  "caption_reference": "narration.txt",
+  "remove_audio_tags": true,
+  "drop_punctuation_only_tokens": true,
+  "lowercase_emphasis_words": [
+    "HAMMER",
+    "STREET",
+    "BIGGER",
+    "MOUNTAIN",
+    "HIS",
+    "SIX",
+    "EMPTY"
+  ],
+  "replace": []
+}

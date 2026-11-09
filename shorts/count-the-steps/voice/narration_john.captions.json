@@ -1,0 +1,18 @@
+{
+  "_comment": "Caption rules for narration_john.txt (Count the Steps, John profile mrabsurdly_john): delivery tags removed, emphasis capitals shown in normal case (captions follow narration.txt). DRAFT, waits for Adrian's script approval.",
+  "spoken_file": "narration_john.txt",
+  "caption_reference": "narration.txt",
+  "remove_audio_tags": true,
+  "drop_punctuation_only_tokens": true,
+  "lowercase_emphasis_words": [
+    "THIRTEEN",
+    "SURE",
+    "FOURTEEN",
+    "FIFTEEN",
+    "LONGER",
+    "TINY",
+    "ELSE",
+    "DOWN"
+  ],
+  "replace": []
+}
