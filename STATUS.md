@@ -1,6 +1,14 @@
 # STATUS – THE HANDYMAN (bisher mrABSURDLY / Mystery & Strange Stories)
 
-## AKTUELL (2026-11-06, abends): Projekt auf die Marke THE HANDYMAN umgestellt
+## AKTUELL (2026-11-09): 5 Skript-Entwürfe für neue Folgen (Claude im Browser)
+- Auf dem Branch `claude/focused-shannon-bbosod`: `shorts/prison-break/`, `bank-vault/`, `moon-crack/`, `pyramid-elevator/`, `volcano-plug/`, jeweils nur `SCRIPT.md`
+- Übersicht: `docs/EPISODES.md` → „Skript-Entwürfe“
+- Nichts gerendert, keine Stimme, kein Ton, keine Kosten
+- **„The Leaking Volcano“ (`shorts/volcano-plug/`) Skript v4 freigegeben** (2026-11-09). Auftrag für den Mac: `shorts/volcano-plug/MAC_PROMPT.md` (zuerst Drachen-Figur entwerfen, dann Bild ohne Stimme)
+- Die anderen vier Skripte bleiben Entwürfe
+- **Nächster Schritt:** auf dem Mac Branch holen und `MAC_PROMPT.md` ausführen
+
+## Vorher (2026-11-06, abends): Projekt auf die Marke THE HANDYMAN umgestellt
 - **Kanal:** THE HANDYMAN · Slogan-Empfehlung: „Every job hides a mystery.“ (`docs/HANDYMAN_BRAND.md`)
 - **Hauptfigur jeder Folge:** The Handyman = Leo in Arbeitskleidung, wie im Pilot. Verbindlich und gesperrt: `docs/HANDYMAN_CHARACTER_BIBLE.md`, im Code `HANDYMAN` in `src/engine/castbible.ts` (nur ergänzt; Pilot-Code unverändert).
 - **Gültige Dokumente:**
