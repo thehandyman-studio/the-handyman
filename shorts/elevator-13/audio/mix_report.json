@@ -3,12 +3,12 @@
  "frames": 1716,
  "with_voice": false,
  "lufs": -24.4,
- "true_peak_dbtp": -2.67,
- "music_lufs": -26.46,
+ "true_peak_dbtp": -2.63,
+ "music_lufs": -26.44,
  "amb_lufs": -30.71,
  "sfx_lufs": -26.62,
  "voice_lufs_in_mix": null,
  "voice_minus_rest_median_db": null,
- "loop_seam_step_db": 1.0,
- "median_step_db": 1.06
+ "loop_seam_step_db": 1.01,
+ "median_step_db": 1.05
 }
