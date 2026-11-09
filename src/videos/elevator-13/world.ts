@@ -78,7 +78,10 @@ export class ElevatorWorld implements ShortWorld {
     this.car.root.visible = env !== "surface";
     this.shaft.at(depthAt(f));
     if (this.carCasts === null) { this.carCasts = []; this.car.root.traverse((o) => { if ((o as THREE.Mesh).isMesh) this.carCasts!.push(o); }); }
-    for (const o of this.carCasts) o.castShadow = env !== "shaft"; // the car must not darken the shaft walls
+    const kind = x.light ?? (env === "city" ? "city" : env === "surface" ? "surface" : "car");
+    // the car must not darken the shaft walls; inside, the ceiling lamp lights evenly (doors open or shut = same light -> clean loop)
+    for (const o of this.carCasts) o.castShadow = env !== "shaft";
+    this.rig.sun.castShadow = kind !== "car"; // no shadows from the hall above or the lattice below fall into the car
     // ---- moving parts ----
     const d = displayAt(f), lamp = lightAt(f);
     this.car.pose({ doors: doorsAt(f), cover: coverAt(f), glow13: glow13(f), pressed: pressedAt(f), display: d.v, dispOn: d.on, light: lamp, driver: driverAt(f) });
@@ -93,7 +96,6 @@ export class ElevatorWorld implements ShortWorld {
     // ---- light, fog, background ----
     this.focus.set(...(r.focus?.(f) ?? c.look));
     const dist = cam.position.distanceTo(this.focus), rad = Math.max(4, Math.min(320, dist * 1.4));
-    const kind = x.light ?? (env === "city" ? "city" : env === "surface" ? "surface" : "car");
     if (kind === "car") { // the ceiling lamp drives the key light
       Object.assign(this.lit, CAR_L);
       const k = 0.35 + 0.65 * lamp; this.lit.lit = [CAR_L.lit[0] * k, CAR_L.lit[1] * k, CAR_L.lit[2] * k]; this.lit.sunI = CAR_L.sunI * k;
